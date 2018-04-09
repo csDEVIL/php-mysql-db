@@ -1,0 +1,28 @@
+acer;www.acer.com;Shop No.1,2,3 Nambi Complex, Mount Road, 7/8, Blackers Rd, Annasalai, Chennai, Tamil Nadu 600002;taiwan;2147483647
+aorus;www.aorus.com;shop no 11, line ali, opp gune hospital, Old Panvel, Panvel, Navi Mumbai, Maharashtra 410206;usa;20500000
+apple;www.apple.com;no 7, avadi, S Bazaar, Thandurai, Chennai, Tamil Nadu 600072;usa2;147483647
+asus;www.asus.com;No.AB115, Shanthi Colony, 4th Avenue, opp to srivari sweetes, next to khadims shop, Anna Nagar, Ann;taiwan;2147483647
+cs;www.cs.com;chennai , forum mall;India;222235586
+dell;www.dell.com;No 1A, Opp Head Post Office, JN Road, Tiruvallur, Tamil Nadu 602003;usa;2147483647
+Digital Storm;www.digitalstorm.com;not available;usa;524000000
+eurocom;www.eurocom.com;25 Rue de l'Industrie, 44310 Saint-Philbert-de-Grand-Lieu, France;france;101000000
+google;store.google.com;not available;usa;2147483647
+hp;www.hp.com;48, 4th Ave, Shanthi Colony, AI Block, Anna Nagar, Chennai, Tamil Nadu 600040;usa;2147483647
+Huawei;www.huawei.com;Shop No. 4, 1st Floor, Cision Complex, Montieth Road, Egmore, Chennai, Tamil Nadu 600008;china;2147483647
+intel;www.intel.com;1 st Cross Street, Mahindra World City, Maraimalai Nagar, Tamil Nadu 603209;usa;2147483647
+lenovo;www3.lenovo.com;Door No. 4, 1st Avenue, 4th Block, Mogappair West, Mogappair, Chennai, Tamil Nadu 600037;china;2147483647
+lg;www.lg.com;Sai Nagar, Porur, Chennai, Tamil Nadu 600116;south korea;2147483647
+micromax;www.micromax.com;M/S Shyam Info System No. 38, First Floor, M.T.H. Road, Near Rakki Theatre, Ambattur, Chennai, Tamil;india;2147483647
+microsoft;www.microsoft.com;Kaviarasu Kannadhasan Nagar, Kodungaiyur, Chennai, Tamil Nadu 600118;usa;2147483647
+motorola;www.motorola.com;379/370, National Highway 716, Teachers Colony, Ambattur, Chennai, Tamil Nadu 600053;usa;2147483647
+msi;www.msi.com;5, 2nd Floor,, 3, 100 Feet Rd, Vadapalani, Chennai, Tamil Nadu 600026;taiwan;2147483647
+nokia;www.nokia.com;Rocky Agency-33, T P K Road, Holly Mark Tower, Behind Park Sheratton Alwork Pet, T P K Road, Chennai;finland;2147483647
+oneplus;oneplus.net;New No-73, Old No-46, Prince Plaza, 2nd Floor, Shop No-25 & 26, Pantheon Road, Egmore, Opp Governmen;china;1400000000
+oppo;www.oppo.com;No. 17 & 10-53, Pari Rd, X Block, J J Nagar, Mogappair East, Chennai, Tamil Nadu, Pari Road, X Block;china;2147483647
+origin pc;www.originpc.com;not available;usa;230000000
+razer;www.razerzone.com;1 Cannon St, Causeway Bay, Hong Kong;singapore;1000000000
+samsung;www.samsung.com;Vivek Nagar, Ambattur, Chennai, Tamil Nadu 600053;south korea;2147483647
+sony;www.sony.net;No. 62/33, Kalingar Street, Washermenpet, Royapuram, Chennai, Tamil Nadu 600021;japan;2147483647
+toshiba;www.mytoshiba.com;No 6aa,2nd flr,Arjun Tower,100ft Rd,Vadapalani, Chennai, Tamil Nadu 600026;japan;2147483647
+vivo;www.vivo.com;Madhavaram - Arumandai Rd, Devaraj Nagar, Madhavaram, Chennai, Tamil Nadu 600060;china;2147483647
+xiaomi;www.xiaomi-mi.com;18, 3rd Avenue, Kumaran Nagar, A Block, Anna Nagar, Chennai, Tamil Nadu 600102;china;2147483647

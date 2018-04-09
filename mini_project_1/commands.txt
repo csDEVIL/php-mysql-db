@@ -1,0 +1,10 @@
+trigger--
+create trigger pricecheck before insert on smartphone for each row if new.price<0 then set new.price=0; end if;//
+create trigger pricecheck before insert on laptop for each row if new.os='' then set new.os='dos'; end if;//
+create trigger l_gpucheck before insert on laptop for each row if new.gpu='' then set new.gpu='intel hd 550'; end if;//
+
+CREATE TRIGGER m_deletecheck BEFORE DELETE on manufacturer FOR EACH ROW BEGIN 
+DELETE FROM smartphone WHERE smartphone.manufacturer = old.name; 
+DELETE FROM laptop WHERE laptop.manufacturer = old.name; 
+DELETE FROM desktop WHERE desktop.manufacturer = old.name;END //
+
