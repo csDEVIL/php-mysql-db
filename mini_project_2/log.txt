@@ -1,0 +1,75 @@
+# mini project 2 log file
+# Prakkash Manohar | 201601065
+# Chinmay Samal | 201601018
+
+
+#JOIN QUERIES
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+select distinct city.Name, city.Population, countrylanguage.Language, countrylanguage.Percentage
+    from countrylanguage
+    left join country on countrylanguage.CountryCode=country.Code
+    left join city on city.CountryCode=country.Code
+    where
+    countrylanguage.IsOfficial='T' and countrylanguage.Percentage>90.0 and city.Population>800000;
+	
+
+select count(*)as official_languages,country_name from (select distinct country.Name as country_name, countrylanguage.CountryCode, countrylanguage.Language
+    from country
+    left join countrylanguage on country.Code=countrylanguage.CountryCode
+    left join city on city.CountryCode=country.Code
+    where
+    country.GovernmentForm='Republic' and countrylanguage.IsOfficial='T' )as c1 group by country_name having official_languages>1;
+	
+#PROCEDURES
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------	
+DELIMITER $$
+CREATE PROCEDURE life_expectancy(IN low FLOAT, IN high FLOAT, OUT count INT)
+proc_label:BEGIN
+IF (low < 0) OR (low > 100) OR (high < 0) OR (high > 100) THEN
+SELECT 'ERROR! INVALID RANGE.';
+LEAVE proc_label;
+END IF;
+SELECT Name FROM country WHERE LifeExpectancy > low AND LifeEXpectancy < high;
+SELECT COUNT(*) INTO count FROM (SELECT Name FROM country WHERE LifeExpectancy > low AND LifeEXpectancy < high) as t;
+END$$
+DELIMITER ;
+
+
+DELIMITER $$
+CREATE PROCEDURE cities(IN country VARCHAR(30), IN district VARCHAR(50), OUT count INT)
+BEGIN
+SELECT city.Name, District, country.Name FROM country
+LEFT JOIN city ON city.CountryCode = country.Code
+WHERE
+country.Name = country AND city.District = district;
+SELECT COUNT(*) INTO count FROM (SELECT city.Name FROM country
+LEFT JOIN city ON city.CountryCode = country.Code
+WHERE
+country.Name = country AND city.District = district) as t;
+END$$
+DELIMITER ;
+
+#INDEXES
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SET profiling = 1;
+SHOW PROFILES;
+SHOW PROFILE FOR QUERY 1;
+
+mysql> show indexes from city;
+Empty set (0.00 sec)
+select * from city where Population<2000000;
+create index btree_city on city(CountryCode) using btree;
+create index hash_city on city(CountryCode) using hash;
+select * from city use index(btree_city) where Population<2000000;
+select * from city use index(hash_city) where Population<2000000;
+
+mysql> show profiles;
++----------+------------+-------------------------------------------------------------------+
+| Query_ID | Duration   | Query                                                             |
++----------+------------+-------------------------------------------------------------------+
+|        1 | 0.00435000 | select * from city where Population<2000000                       |
+|        2 | 0.08266775 | select * from city use index(btree_city) where Population<2000000 |
+|        3 | 0.00438325 | select * from city use index(hash_city) where Population<2000000  |
++----------+------------+-------------------------------------------------------------------+
+	
